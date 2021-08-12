@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+</head>
+<body>
+    <form action="">
+        <h1>payment form</h1>
+        <h1 style="color:blueviolet"> payment form</h1>   <!--"IN LINE CSS"-->
+        <p>required feilds are followed by *</p>
+        <h2>contact informaton</h2>
+        <!--"name is to take name as input
+            input type is to take input as text from user
+            name tag is to send information to server side together with text value"-->
+        <p>name:* <input type="text" name="name" required> </p>   <!-- required is used ro remind to fill-->
+
+        <!--" field set tag is used to make in RECTANGLE FOR OARAMETERS CHOICE
+            ands  legend tag for writning name in top og box"-->
+        <fieldset>
+            <legend>GENDER</legend>
+        <p>
+           <!--"input type radio is used to give choice"-->◘
+            boy <input type="radio" name="gender" id=""> <br>
+            girl <input type="radio" name="gender" id="">
+        </p>
+    </fieldset>
+
+    <!--"address text area tag is used generally to provide large space for large address"-->
+    <p> Address:<textarea name="address" id="address" cols="30" rows="20" ></textarea> </p>
+    <p>Email:* <input type="email" name="Email" id="Email" required></p>
+    <p>Pincode:* <input type="number" name="PINCODE" id="PINCODE" required></p>
+    <h2>payment Information</h2>
+    <p>card type:
+        <!--"SELECT tag is used to selelct cards display
+            first OPTION tag is empty so that he can see select card option in optons "-->
+        <select name="card_type" id="card_type">
+            <option value="">---selelct-a card type--</option>
+            <option value="VISA">VISA</option>
+            <option value="MASTER CARD">MASTER CARD</option>
+        </select>
+    </p>
+    <p>
+        card number <input type="number" name="card number" id="card number">
+    </p>
+    <p>
+        Expiration Date: <input type="date" name="exp_date" id="exp_date">
+    </p>
+    <p>
+        CVV input: <input type="password" name="cvv" id="cvv">
+    </p>
+    <input type="submit" value="pay now">
+ </form>
+ 
+</body>
+</html>
